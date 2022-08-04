@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+// use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('main');
+})->name('home');;
+
+Route::get('/nosotros', function () {
+    return view('nosotros');
+});
+
+Route::get('/prestamopersonal', function () {
+    return view('prestamopersonal');
+});
+
+Route::get('/arrendamiento', function () {
+    return view('arrendamiento');
 });
