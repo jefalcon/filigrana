@@ -28,3 +28,7 @@ Route::get('/prestamopersonal', function () {
 Route::get('/arrendamiento', function () {
     return view('arrendamiento');
 });
+
+Route::get('/crearcontactoresidencial', function () {
+    return view('crearcontactoresidencial');
+});

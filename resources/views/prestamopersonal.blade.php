@@ -60,7 +60,8 @@
     </div>
     <div class="col-4 text-center" >
         <h2 id="total" onload="Calculate()"></h2>
-        <button type="submit" id="BotonMeInteresa">Me interesa! </button>
+        <a href="/crearcontactoresidencial"><input type="button" class="btn btn-primary" value="Me interesa!"></a>
+        
     </div>
     <div class="col-4">
     </div>
