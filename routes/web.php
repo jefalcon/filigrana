@@ -15,7 +15,7 @@
 
 Route::get('/', function () {
     return view('main');
-})->name('home');;
+})->name('home');
 
 Route::get('/nosotros', function () {
     return view('nosotros');
@@ -29,6 +29,13 @@ Route::get('/arrendamiento', function () {
     return view('arrendamiento');
 });
 
-Route::get('/crearcontactoresidencial', function () {
-    return view('crearcontactoresidencial');
-});
+Route::post('/crearcontactoresidencial', 
+            "App\Http\Controllers\AltaContactoResidencialController@index")
+                ->name('alta.residencial');
+
+Route::post('/crearsolicitudresidencial', 'App\Http\Controllers\AltaContactoResidencialController@store')
+                ->name('alta.solicitud.residencial');
+
+// Route::get('/crearcontactoresidencial/{importe}/{plazo}', function ($importe,$plazo) {
+//     return view('crearcontactoresidencial')->with('importe', $importe)->with('plazo', $plazo);;
+// });

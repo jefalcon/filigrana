@@ -22,8 +22,9 @@ function Calculate() {
     // Calculating total payment
     const total = ((amount / months) + interest).toFixed(2);
     
-    document.querySelector("#amount").innerHTML = amount + " Pesos";        
-    document.querySelector("#months").innerHTML = months + " Meses";        
+    document.querySelector("#amount").innerHTML = "Importe: " + amount + " Pesos";        
+    document.querySelector("#months").innerHTML = "Plazo: " +months + " Meses";        
+    document.querySelector("#cuota").innerHTML = total;        
 
     if (rate==0 || months==0 || interest==0){
         document.querySelector("#total")
@@ -31,9 +32,11 @@ function Calculate() {
     }else
     {
         document.querySelector("#total")
-        .innerHTML =  "Tu cuota mensual es de " + total;
+        .innerHTML =  "Cuota mensual:" ;//+ total;
+        document.querySelector("#cuota").value = total;  
     }
 
     // document.querySelector("#total")
     //     .innerHTML =  total;
 }  
+
