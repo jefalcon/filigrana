@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class SolicitudResidencial extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['estado_id','cliente_id','descripcion','importe','meses','cuota'];
 }

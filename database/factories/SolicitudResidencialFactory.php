@@ -22,6 +22,7 @@ class SolicitudResidencialFactory extends Factory
         'descripcion'=>$this->faker->text(),
         'importe'=>$this->faker->numberbetween(1000,15000),
         'meses'=>$this->faker->numberbetween(6,60),
+        'cuota'=>$this->faker->numerify('########.##'),
 
         ];
     }

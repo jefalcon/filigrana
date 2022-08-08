@@ -25,7 +25,8 @@ class CreateSolicitudResidencialsTable extends Migration
             $table->string('descripcion');
             $table->integer('importe');
             $table->integer('meses');
-
+            $table->decimal('cuota', $precision = 10, $scale = 2);
+            
             $table->timestamps();
         });
     }

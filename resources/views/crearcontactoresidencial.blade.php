@@ -17,7 +17,7 @@
         <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre...">
         <br>
         <label for="fx_nacimiento">Fecha de nacimiento</label>
-        <input type="text" class="form-control" id="fx_nacimiento" name="fx_nacimiento" placeholder="DD/MM/AAAA">
+        <input type="text" class="form-control" id="fx_nacimiento" name="fx_nacimiento" placeholder="YYYY-MM-DD">
         <br>
         <label for="documento">Documento</label>
         <input type="text" class="form-control" id="documento" name="documento" placeholder="Intoduce tu número de documento">
@@ -35,19 +35,19 @@
         <input type="text" class="form-control" id="antiguedad" name="antiguedad" placeholder="Años en tu trabajo avtual">
         <br>
         <label for="descripcion">Descripción</label>
-        <input type="text" class="form-control" id="antiguedad" name="antiguedad" placeholder="El crédito lo quiero para...">
+        <input type="text" class="form-control" id="descripcion" name="descripcion" placeholder="El crédito lo quiero para...">
         <br>
         <label for="importe">Importe solicitado</label>
         <input type="text" class="form-control" id="importe" name="importe" 
-                 readonly="readonly" placeholder="{{request()->get('importe')}}">
+                 readonly="readonly" value="{{request()->get('importe')}}">
         <br>
         <label for="plazo">Plazo de devolución</label>
         <input type="text" class="form-control" id="plazo" name="plazo" 
-                 readonly="readonly" placeholder="{{request()->get('plazo')}}">
+                 readonly="readonly" value="{{request()->get('plazo')}}">
         <br>
         <label for="cuota">Cuota mensual</label>
         <input type="text" class="form-control" id="cuota" name="cuota" 
-                 readonly="readonly" placeholder="{{request()->get('cuota')}}">
+                 readonly="readonly" value="{{request()->get('cuota')}}">
         <br>
 
     </div>
